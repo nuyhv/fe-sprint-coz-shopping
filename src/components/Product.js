@@ -20,6 +20,10 @@ export default function Product({ product }) {
         <div className="product-container">
           <div className="image-container">
             <img className="product-image" src={image_url}></img>
+            <img
+              className="bookmark-image"
+              src={bookmarked ? "/staron.svg" : "/staroff.svg"}
+            ></img>
           </div>
           <div className="title-container">
             <h3>{title}</h3>
@@ -28,6 +32,7 @@ export default function Product({ product }) {
             </span>
           </div>
           <div className="detail-container">
+            <div className="dummy"></div>
             <span className="product-price">
               {Number(price).toLocaleString()}원
             </span>
@@ -40,6 +45,10 @@ export default function Product({ product }) {
         <div className="product-container">
           <div className="image-container">
             <img className="product-image" src={image_url}></img>
+            <img
+              className="bookmark-image"
+              src={bookmarked ? "/staron.svg" : "/staroff.svg"}
+            ></img>
           </div>
           <div className="title-container">
             <h3># {title}</h3>
@@ -53,6 +62,10 @@ export default function Product({ product }) {
         <div className="product-container">
           <div className="image-container">
             <img className="product-image" src={image_url}></img>
+            <img
+              className="bookmark-image"
+              src={bookmarked ? "/staron.svg" : "/staroff.svg"}
+            ></img>
           </div>
           <div className="title-container">
             <h3>{title}</h3>
@@ -68,13 +81,18 @@ export default function Product({ product }) {
         <div className="product-container">
           <div className="image-container">
             <img className="product-image" src={brand_image_url}></img>
+            <img
+              className="bookmark-image"
+              src={bookmarked ? "/staron.svg" : "/staroff.svg"}
+            ></img>
           </div>
           <div className="title-container">
             <h3>{brand_name}</h3>
-            <span className="follwer">관심고객수</span>
+            <h3>관심고객수</h3>
           </div>
           <div className="detail-container">
-            <span className="follwer-count">{follower}</span>
+            <div className="dummy"></div>
+            <span className="follwer-count">{follower.toLocaleString()}</span>
           </div>
         </div>
       );

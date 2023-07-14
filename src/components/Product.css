@@ -6,6 +6,60 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.bookmark-image {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 17px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
 .product-container {
   padding-right: 24px;
+}
+
+.title-container {
+  height: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-container {
+  height: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.product-price {
+  color: #000;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.discount {
+  color: #452cdd;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }

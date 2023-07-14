@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./pages/Main";
-import Bookmark from "./pages/Bookmark";
+import BookmarkList from "./pages/BookmarkList";
 import ProductList from "./pages/ProductList";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -27,7 +27,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main products={products} />} />
-        <Route path="/bookmark" element={<Bookmark products={products} />} />
+        <Route
+          path="/bookmark"
+          element={<BookmarkList products={products} />}
+        />
         <Route
           path="/product/list"
           element={<ProductList products={products} />}

@@ -1,4 +1,6 @@
 import "./Bookmark.css";
+import Product from "./Product";
+import { useState, useEffect } from "react";
 
 export default function Bookmark({ image_url, title, price }) {
   return (
